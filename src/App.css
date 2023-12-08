@@ -151,8 +151,49 @@ input::placeholder {
 }
 
 .judul {
-  width: 1068px;
+  display: flex;
   font-size: 2rem;
   margin-left: 5px;
-  text-align: start;
+  justify-items: start;
+}
+
+@media (max-width: 1024px) {
+  .wallpaper {
+    width: 940px;
+  }
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .wallpaper {
+    width: 700px;
+  }
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 426px) {
+  .wallpaper {
+    width: 400px;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 376px) {
+  .wallpaper {
+    width: 330px;
+  }
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 321px) {
+  .wallpaper {
+    width: 280px;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
